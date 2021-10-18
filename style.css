@@ -90,6 +90,13 @@ button{
 .right-content{
     color: #fff;
 }
+.imoji{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: none;
+}
 
 @keyframes sagor {
     50%{

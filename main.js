@@ -7,6 +7,7 @@ const tNumber = document.querySelector(".target-number");
 const tplay = document.querySelector(".target-play"); 
 const gameOver = document.querySelector(".gameOver");
 const reset = document.querySelector(".reset");
+const imoji = document.querySelector(".imoji");
 
 let counterWin = 0;
 let counterLoss = 0;
@@ -48,9 +49,11 @@ playForm.addEventListener("submit", (e) => {
         const lTarget = playGame(play);
         if(count === counter){
             if(counterWin > counterLoss){
+                imoji.style.display = "block";
                 gameOver.insertAdjacentHTML("beforebegin",`<h2 class="playerIsWinner">You are wine. The number is: ${counterWin}</h2>`)
             }else{
                 gameOver.insertAdjacentHTML("beforebegin",`<h2 class="playerIsLooser">You are lost. The looser number is: ${counterLoss}</h2>`)
+                imoji.style.display = "block";
             }
             reset.style.display = "block";
             gameOver.textContent = "game is over";
@@ -96,3 +99,4 @@ const resetFun = () => {
     tplay.removeAttribute("disabled","disabled");
     reset.style.display = "none";
 }
+
