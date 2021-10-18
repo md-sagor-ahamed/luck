@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(abstract-flowing-neon-wave-background_53876-101942.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+    margin-top: 60px;
+}
+.d-flex{
+    display: flex;
+}
+.left-content{
+    padding: 0 20px;
+    border-right: 2px solid #333;
+}
+.right-content{
+    padding: 0 20px;
+}
+ul {
+    margin-bottom: 15px;
+}
+ul li {
+    margin-bottom: 5px;
+    color: #fff;
+}
+h1{
+    margin-bottom: 10px;
+    color: #fff;
+}
+input{
+    margin-bottom: 15px;
+    padding: 5px 0px;
+}
+button{
+    padding: 5px;
+}
+.alert{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid red;
+    width: 300px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    animation: sagor infinite 1s;
+}
+.gameOver{
+    color: red;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.playerIsWinner{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+.playerIsLooser{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.reset{
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    color: white;
+    border: none;
+    outline: none;
+    display: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.right-content{
+    color: #fff;
+}
+
+@keyframes sagor {
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(-20px);
+    }
+}
