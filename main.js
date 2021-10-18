@@ -98,5 +98,6 @@ const resetFun = () => {
     playLoss.textContent = counterLoss;
     tplay.removeAttribute("disabled","disabled");
     reset.style.display = "none";
+    imoji.style.display = "none";
 }
 
